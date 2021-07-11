@@ -32,3 +32,13 @@
 
 ![Снимок экрана (524)](https://github.com/alexvoron15/python_practice/blob/783ffab3678b4c2f35f481d355ebcd9ccfbba738/Screenshots/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20(524).png)
 Запушив репозиторій на сервер
+
+## Task-2
+![Снимок экрана (526)](https://github.com/alexvoron15/python_practice/blob/d4749e418fd359953dc268f01fef84880aaff65a/Screenshots/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20(526).png)
+Створив папку Task-2, а в ній файл main.py для виконання завдання
+
+![Снимок экрана (527)](https://github.com/alexvoron15/python_practice/blob/d4749e418fd359953dc268f01fef84880aaff65a/Screenshots/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20(527).png)
+Виконав завдання, додав його у репозиторій
+
+![Снимок экрана (528)](https://github.com/alexvoron15/python_practice/blob/d4749e418fd359953dc268f01fef84880aaff65a/Screenshots/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20(528).png)
+Закомітив зміни (Забув заскрінити коміти та очистив консоль :3), після чого запушив репозиторій
