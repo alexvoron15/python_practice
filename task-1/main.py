@@ -26,5 +26,8 @@ for i in digit:
         digits.append(res)
     index += 1
 
-print("Максимальний елемент списку: ", d_max)
+if not digits:
+    print("Список чисел пустий")
+else:
+    print("Максимальний елемент списку: ", d_max)
 print("Отриманий список: ", digits)
