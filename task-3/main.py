@@ -4,12 +4,27 @@ import tkinter as tk
 from tkinter import *
 from tkinter.tix import *
 
+#windows
 
 window = tk.Tk()
 window.title('CoronaV Info')
 window.geometry('1600x625')
 window.resizable(False, False)
 window.config(bg='#272727')
+
+def new_window():
+    nw = tk.Tk()
+    nw.title("Список достпних країн")
+    nw.config(bg='#272727')
+    nw.resizable(False, False)
+    j=0
+    d=0
+    for i in range(48):
+        tk.Label(nw,text = data[i]['Country'], width = 20, font =('Arial', 12), bg = '#272727', fg = 'White', pady=5, padx=5).grid(row  = j, column =d, padx = 9, pady = 3)
+        d+=1
+        if d%5==0:
+            d=0
+            j+=1
 
 with open('data.json', 'r') as file:
     data = json.load(file)
@@ -121,37 +136,17 @@ def your_counntry():
             tk.Label(text = "Зроблено тестів", width = 20, font =('Arial', 12), bg = '#272727', fg = 'White').grid(row  = 10, column = 5, padx = 9, pady = 3)
             tk.Label(text = data[i]['TotalTests'], width = 20, font =('Arial', 12), bg = '#272727', fg = 'White').grid(row  = 11, column = 5, padx = 9, pady = 3)
             break
-        else:
-            tk.Label(text = val, width = 20, font =('Arial', 12, 'bold'), bg = '#272727', fg = 'White').grid(row  = 1, column = 5, padx = 9, pady = 3)
-            info = tk.Label(text = "Інформації \nпо даній країні \nнемає", width = 20, font =('Arial', 12, 'bold'), bg = '#272727', fg = 'White').grid(row  = 2, column = 5, padx = 9, pady = 3, rowspan = 3)
 
 #Buttons
 tk.Button(text = 'Оновити', font = ('Arial', 15, 'bold'), fg ='White', bg = '#272727', command=update).grid(row = 14, column = 0, padx = 10 ,sticky = 'w', stick = 'we', pady = 10)
 tk.Button(text = 'Знайти', font = ('Arial', 15, 'bold'), fg ='White', bg = '#272727', command=your_counntry).grid(row = 13, column = 0, padx = 10 ,sticky = 'w', stick = 'we', pady = 10)
+tk.Button(text = 'Доступні країни', font = ('Arial', 15, 'bold'), fg ='White', bg = '#272727', command=new_window).grid(row = 15, column = 0, padx = 10 ,sticky = 'w', stick = 'we', pady = 10)
 
 #Enter country
 my_country = tk.Entry(font =('Arial',15,'bold'), fg = 'white', bg = '#272727')
 my_country.grid(row = 13, column = 1, padx = 9 ,sticky = 'w', stick = 'we', pady = 10)
 tk.Label(text = 'Введіть назву країни англійською мовою (Лише країни європейського регіону)', font = ('Arial', 15, 'bold'), fg ='White', bg = '#272727').grid(row  = 14, column = 1, columnspan=4, sticky = 'wn', padx = 9)
 
-def new_window():
-    nw = tk.Tk()
-    nw.title("Список достпних країн")
-    nw.config(bg='#272727')
-    nw.resizable(False, False)
-    j=0
-    d=0
-    for i in range(48):
-        tk.Label(nw,text = data[i]['Country'], width = 20, font =('Arial', 12), bg = '#272727', fg = 'White', pady=5, padx=5).grid(row  = j, column =d, padx = 9, pady = 3)
-        d+=1
-        if d%5==0:
-            d=0
-            j+=1
 
-
-
-
-
-tk.Button(text = 'Доступні країни', font = ('Arial', 15, 'bold'), fg ='White', bg = '#272727', command=new_window).grid(row = 15, column = 0, padx = 10 ,sticky = 'w', stick = 'we', pady = 10)
 
 window.mainloop()
