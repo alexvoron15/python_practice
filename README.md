@@ -42,3 +42,26 @@
 
 ![Снимок экрана (528)](https://github.com/alexvoron15/python_practice/blob/d4749e418fd359953dc268f01fef84880aaff65a/Screenshots/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20(528).png)
 Закомітив зміни (Забув заскрінити коміти та очистив консоль :3), після чого запушив репозиторій
+
+
+##Task-3
+Спочатку підготував файл та папку для роботи:
+![Снимок экрана (529)](https://github.com/alexvoron15/python_practice/blob/85dee281987eb03e8840c1c5f79994519f404390/Screenshots/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20(529).png)
+
+![Снимок экрана (532)](https://github.com/alexvoron15/python_practice/blob/85dee281987eb03e8840c1c5f79994519f404390/Screenshots/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20(532).png)
+Далі зареєструвався на RapidAPI, після чого вибрав потрібний для роботи API (VACCOVID). Вибрав на головній сторінкі (в Code snippets) мову програмування Python, скопіював даний сніпет та вставив у редактор коду.
+
+Після цього приступив до написання програми. Ось результат:
+
+На наступному скріні показано головне меню програми. В ньому відображено 5 основних країн, кнопки "Знайти"(Запускає пошук даних по назві країни),"Оновити"(Оновлює JSON файл для отримання актуальних даних),"Доступні країни"(список країн для пошуку):
+![Снимок экрана (535)](https://github.com/alexvoron15/python_practice/blob/85dee281987eb03e8840c1c5f79994519f404390/Screenshots/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20(535).png)
+
+На даних скрінах показано приклад роботи пошуку:
+![Снимок экрана (536)](https://github.com/alexvoron15/python_practice/blob/85dee281987eb03e8840c1c5f79994519f404390/Screenshots/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20(536).png)
+![Снимок экрана (537)](https://github.com/alexvoron15/python_practice/blob/85dee281987eb03e8840c1c5f79994519f404390/Screenshots/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20(537).png)
+
+На даному ж скріні продемонстровано вікно з списком достпних країн:
+![Снимок экрана (538)](https://github.com/alexvoron15/python_practice/blob/85dee281987eb03e8840c1c5f79994519f404390/Screenshots/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20(538).png)
+
+
+
