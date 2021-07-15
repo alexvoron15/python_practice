@@ -26,8 +26,7 @@ def new_window():
             d=0
             j+=1
 
-with open('data.json', 'r') as file:
-    data = json.load(file)
+
 
 #Main name
 tk.Label(window, text = 'Статистика по Covid-19 в європейському регіоні', font = ('Arial', 18, 'bold'), bg = '#272727', fg = 'White').grid(padx = 10, row = 0, column = 0, columnspan = 6, sticky='w')
@@ -53,6 +52,8 @@ def update():
 
 #This function contains table with information
 def load():
+    with open('data.json', 'r') as file:
+        data = json.load(file)
     #Russia:
     tk.Label(text = data[0]['Country'], width = 20, font =('Arial', 12, 'bold'), bg = '#272727', fg = 'White').grid(row  = 1, column = 0, padx = 9, pady = 3)
     tk.Label(text = "Випадків захворювання", width = 20, font =('Arial', 12), bg = '#272727', fg = 'White').grid(row  = 2, column = 0, padx = 9, pady = 3)
@@ -65,7 +66,6 @@ def load():
     tk.Label(text = data[0]['TotalDeaths'], width = 20, font =('Arial', 12), bg = '#272727', fg = 'White').grid(row  = 9, column = 0, padx = 9, pady = 3)
     tk.Label(text = "Зроблено тестів", width = 20, font =('Arial', 12), bg = '#272727', fg = 'White').grid(row  = 10, column = 0, padx = 9, pady = 3)
     tk.Label(text = data[0]['TotalTests'], width = 20, font =('Arial', 12), bg = '#272727', fg = 'White').grid(row  = 11, column = 0, padx = 9, pady = 3)
-
     #Ukraine :3
     tk.Label(text = data[7]['Country'], width = 20, font =('Arial', 12, 'bold'), bg = '#272727', fg = 'White').grid(row  = 1, column = 1, padx = 9, pady = 3)
     tk.Label(text = "Випадків захворювання", width = 20, font =('Arial', 12), bg = '#272727', fg = 'White').grid(row  = 2, column = 1, padx = 9, pady = 3)
@@ -78,7 +78,6 @@ def load():
     tk.Label(text = data[7]['TotalDeaths'], width = 20, font =('Arial', 12), bg = '#272727', fg = 'White').grid(row  = 9, column = 1, padx = 9, pady = 3)
     tk.Label(text = "Зроблено тестів", width = 20, font =('Arial', 12), bg = '#272727', fg = 'White').grid(row  = 10, column = 1, padx = 9, pady = 3)
     tk.Label(text = data[7]['TotalTests'], width = 20, font =('Arial', 12), bg = '#272727', fg = 'White').grid(row  = 11, column = 1, padx = 9, pady = 3)
-
     #France
     tk.Label(text = data[1]['Country'], width = 20, font =('Arial', 12, 'bold'), bg = '#272727', fg = 'White').grid(row  = 1, column = 2, padx = 9, pady = 3)
     tk.Label(text = "Випадків захворювання", width = 20, font =('Arial', 12), bg = '#272727', fg = 'White').grid(row  = 2, column = 2, padx = 9, pady = 3)
@@ -91,7 +90,6 @@ def load():
     tk.Label(text = data[1]['TotalDeaths'], width = 20, font =('Arial', 12), bg = '#272727', fg = 'White').grid(row  = 9, column = 2, padx = 9, pady = 3)
     tk.Label(text = "Зроблено тестів", width = 20, font =('Arial', 12), bg = '#272727', fg = 'White').grid(row  = 10, column = 2, padx = 9, pady = 3)
     tk.Label(text = data[1]['TotalTests'], width = 20, font =('Arial', 12), bg = '#272727', fg = 'White').grid(row  = 11, column = 2, padx = 9, pady = 3)
-
     #Germany
     tk.Label(text = data[5]['Country'], width = 20, font =('Arial', 12, 'bold'), bg = '#272727', fg = 'White').grid(row  = 1, column = 3, padx = 9, pady = 3)
     tk.Label(text = "Випадків захворювання", width = 20, font =('Arial', 12), bg = '#272727', fg = 'White').grid(row  = 2, column = 3, padx = 9, pady = 3)
@@ -104,7 +102,6 @@ def load():
     tk.Label(text = data[5]['TotalDeaths'], width = 20, font =('Arial', 12), bg = '#272727', fg = 'White').grid(row  = 9, column = 3, padx = 9, pady = 3)
     tk.Label(text = "Зроблено тестів", width = 20, font =('Arial', 12), bg = '#272727', fg = 'White').grid(row  = 10, column = 3, padx = 9, pady = 3)
     tk.Label(text = data[5]['TotalTests'], width = 20, font =('Arial', 12), bg = '#272727', fg = 'White').grid(row  = 11, column = 3, padx = 9, pady = 3)
-
     #Italy
     tk.Label(text = data[3]['Country'], width = 20, font =('Arial', 12, 'bold'), bg = '#272727', fg = 'White').grid(row  = 1, column = 4, padx = 9, pady = 3)
     tk.Label(text = "Випадків захворювання", width = 20, font =('Arial', 12), bg = '#272727', fg = 'White').grid(row  = 2, column = 4, padx = 9, pady = 3)
