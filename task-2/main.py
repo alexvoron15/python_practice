@@ -26,8 +26,12 @@ def calculating():
   val = screen.get()
   if val[-1] in '+-*/':
     val = val+ val[:-1]
-  screen.delete(0, tk.END)
-  screen.insert(0, eval(val))
+  elif val[-2:] == '/0':
+    screen.delete(0, tk.END)
+    screen.insert(0, 'На нуль ділити не можна!!!')
+  else:
+    screen.delete(0, tk.END)
+    screen.insert(0, eval(val))
 
 def add_op(operation):
   val = screen.get()
@@ -50,40 +54,47 @@ def Del():
   screen.insert(1,txt)
 
 def add_sin():
+  calculating()
   val = screen.get()
   mat = math.sin(int(val))
   screen.delete(0, tk.END)
   screen.insert(0,mat)
 
 def add_cos():
+  calculating()
   val = screen.get()
   mat = math.cos(int(val))
   screen.delete(0, tk.END)
   screen.insert(0,mat)
 
 def add_tan():
+  calculating()
   val = screen.get()
   mat = math.tan(int(val))
   screen.delete(0, tk.END)
   screen.insert(0,mat)
 
 def add_ctg():
+  calculating()
   val = screen.get()
   mat = math.ctg(int(val))
   screen.delete(0, tk.END)
   screen.insert(0,mat)
 
 def add_log():
+  calculating()
   val = screen.get()
   mat = math.log(int(val))
   screen.delete(0, tk.END)
   screen.insert(0,mat)
 
 def add_ln():
+  calculating()
   val = screen.get()
   mat = math.log10(int(val))
   screen.delete(0, tk.END)
   screen.insert(0,mat)
+
 
 
 
