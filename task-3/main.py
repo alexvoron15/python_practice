@@ -31,6 +31,7 @@ def new_window():
 #Main name
 tk.Label(window, text = 'Статистика по Covid-19 в європейському регіоні', font = ('Arial', 18, 'bold'), bg = '#272727', fg = 'White').grid(padx = 10, row = 0, column = 0, columnspan = 6, sticky='w')
 
+
 #This function for data updating
 def update():
     conn = http.client.HTTPSConnection("vaccovid-coronavirus-vaccine-and-treatment-tracker.p.rapidapi.com")
@@ -115,7 +116,8 @@ def load():
     tk.Label(text = "Зроблено тестів", width = 20, font =('Arial', 12), bg = '#272727', fg = 'White').grid(row  = 10, column = 4, padx = 9, pady = 3)
     tk.Label(text = data[3]['TotalTests'], width = 20, font =('Arial', 12), bg = '#272727', fg = 'White').grid(row  = 11, column = 4, padx = 9, pady = 3)
 load()
-
+with open('data.json', 'r') as file:
+    data = json.load(file)
 #Searching countries
 def your_counntry():
     val = my_country.get()
